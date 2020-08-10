@@ -1,0 +1,41 @@
+.header
+  padding: 26px 0
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-right
+    display: flex
+    align-items: center
+    padding-left: 26px
+  &-menu
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style-type: none
+    &__item
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      &:not(:last-child)
+        margin-right: 40px
+    &__link
+      text-decoration: none
+      color: #183B56
+  &__button
+    margin-left: 40px
+    padding: 13px
+    min-width: 131px
+    background-color: $light
+    border: 2px solid #1565D8
+    border-radius: 8px
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #1565D8
+    cursor: pointer
