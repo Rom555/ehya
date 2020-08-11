@@ -11,7 +11,6 @@
     z-index: 50
     background-color: $light
     &__container
-      position: relative
       max-width: 650px
       width: 91%
     &-menu
@@ -23,8 +22,8 @@
       margin-left: 0
     &-right
       position: absolute
-      top: 10
-      right: -16
+      top: 10px
+      right: 8px
       z-index: 99
       width: 304px
       padding: 36px 24px
@@ -35,10 +34,21 @@
       &--mobile
         &--hiden
           display: none
+      &--visible
+        display: flex
       &__button
         position: absolute
         top: 12px
         right: 16px
+        padding: 0
+        width: 24px
+        height: 24px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: none
+        background-color: $light
+        cursor: pointer
   .menu-button
     display: flex
     width: 24px
