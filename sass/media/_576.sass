@@ -1,4 +1,7 @@
 @media ( max-width: 576px )
+  .title
+    font-size: 28px
+    line-height: 36px
   .header
     padding-top: 18px
   .hero
@@ -43,4 +46,31 @@
         height: 23px
         border-width: 0.5px
         border-radius: 8px
-
+  .collection
+    padding-bottom: 64px
+    &-wrapper
+      text-align: center
+    &__image
+      height: 24%
+      &--big
+        width: 100%
+        height: 73%
+      &-wrapper
+        height: 550px
+        flex-direction: row
+    &__info
+      margin-top: 40px
+    &__title
+      margin-bottom: 16px
+    &__text
+      margin-bottom: 24px
+      font-size: 16px
+      line-height: 28px
+    &__link
+      font-size: 16px
+      line-height: 22px
+@media ( max-width: 400px )
+  .collection
+    &__image
+      &-wrapper
+        height: 410px
