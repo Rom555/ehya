@@ -92,6 +92,7 @@
       line-height: 20px
     &__image
       height: 260px
+      margin-bottom: 13px
     &__info
       justify-content: start
     &__price
@@ -111,6 +112,22 @@
       &__text
         font-size: 20px
         line-height: 24px
+  .comments
+    padding-bottom: 64px
+    &__image
+      width: 70px
+      height: 81px
+    &__text
+      margin-bottom: 24px
+      font-size: 18px
+      line-height: 36px
+    &__author
+      margin-bottom: 24px
+      &-name
+        flex-basis: 100%
+        &::before
+          content: ' - '
+
 @media ( max-width: 400px )
   .collection
     &__image
