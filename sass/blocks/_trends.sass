@@ -2,10 +2,15 @@
   padding-bottom: 95px
   &__top
     display: flex
+    align-items: center
     justify-content: space-between
     margin-bottom: 48px
+  &__card
+    width: 260px
+    margin-bottom: 50px
 .tabs
   padding: 0
+  margin: 0
   display: flex
   list-style-type: none
   &__item
@@ -13,22 +18,19 @@
     font-weight: normal
     font-size: 18px
     line-height: 25px
-    cursor: pointer
     &:not(:last-child)
       margin-right: 38px
     &--active
       font-weight: bold
       color: $dark
 .card
-  width: 260px
   display: none
-  margin-bottom: 50px
   &--active
     display: block
   &-wrapper
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: space-around
   &__image
     margin-bottom: 20px
     width: 100%
@@ -55,26 +57,26 @@
     font-weight: normal
     font-size: 20px
     line-height: 36px
-.card-add
-  margin-bottom: 20px
-  padding: 120px 25px 30px
-  width: 260px
-  height: 350px
-  background-color: $primary
-  text-align: center
-  border-radius: 8px
-  overflow: hidden
-  &__info
-    display: flex
-    flex-direction: column
-  &__image
-    margin-bottom: 25px
-  &__text
-    font-family: HK Grotesk
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 32px
-    letter-spacing: 0.2px
-    color: $light
+  &-add
+    padding: 120px 25px 30px
+    width: 260px
+    height: 350px
+    background-color: $primary
+    border-radius: 8px
+    overflow: hidden
+    &__info
+      display: flex
+      align-items: center
+      text-align: center
+      flex-direction: column
+    &__image
+      margin-bottom: 25px
+    &__text
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $light
 

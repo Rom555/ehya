@@ -69,8 +69,51 @@
     &__link
       font-size: 16px
       line-height: 22px
+  .trends
+    padding-bottom: 0
+    &__top
+      margin-bottom: 36px
+    &__title
+      margin-bottom: 24px
+    &__card
+      margin-bottom: 20px
+  .tabs
+    &__item
+      font-size: 16px
+      line-height: 22px
+      &:not(:last-child)
+        margin-right: 16px
+  .card
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__image
+      height: 260px
+    &__info
+      justify-content: start
+    &__price
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &__cart
+      width: 14px
+    &-add
+      padding: 80px 15px 15px
+      height: 260px
+      &__image
+        width: 25px
+        height: 32px
+      &__text
+        font-size: 20px
+        line-height: 24px
 @media ( max-width: 400px )
   .collection
     &__image
       &-wrapper
         height: 410px
+  .card
+    &__image
+      height: 170px
+    &-add
+      padding: 40px 5px 5px
+      height: 170px
