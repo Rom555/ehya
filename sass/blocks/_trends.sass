@@ -6,7 +6,7 @@
     justify-content: space-between
     margin-bottom: 48px
   &__card
-    width: 260px
+    width: 100%
     margin-bottom: 50px
 .tabs
   padding: 0
@@ -28,9 +28,9 @@
   &--active
     display: block
   &-wrapper
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-around
+    display: grid
+    grid-template-columns: repeat( 4, 1fr )
+    column-gap: 30px
   &__image
     margin-bottom: 20px
     width: 100%
@@ -61,7 +61,6 @@
     display: flex
     justify-content: center
     padding: 120px 0 30px
-    width: 260px
     height: 350px
     background-color: $primary
     border-radius: 8px

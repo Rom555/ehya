@@ -26,10 +26,11 @@
       line-height: 32px
     &__button
       margin-bottom: 40px
-  .trends
-    &__card
-      width: 280px
   .tabs
     &__item
       &:not(:last-child)
         margin-right: 20px
+  .card
+    &-wrapper
+      grid-template-columns: repeat( 2, minmax(280px, 1fr) )
+      column-gap: 48px
