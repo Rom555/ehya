@@ -50,4 +50,16 @@ $(document).ready(function () {
       commentsSwiper.autoplay.start();
     });
   }
+
+  var historySwiper = new Swiper(".history__swiper-container", {
+    slidesPerView: 2,
+    spaceBetween: 18,
+    slidesPerGroup: 2,
+
+    navigation: {
+      nextEl: ".history__button-next",
+      prevEl: ".history__button-prev",
+      disabledClass: "history__button--disabled",
+    },
+  });
 });
