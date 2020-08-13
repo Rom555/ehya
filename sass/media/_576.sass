@@ -2,6 +2,8 @@
   .title
     font-size: 28px
     line-height: 36px
+  .badge
+    padding: 2px
   .header
     padding-top: 18px
   .hero
@@ -127,7 +129,36 @@
         flex-basis: 100%
         &::before
           content: ' - '
-
+  .history
+    padding-bottom: 64px
+    &-wrapper
+      padding-top: 47px
+    &__left
+      margin-bottom: 26px
+    &__badge
+      margin-bottom: 24px
+    &__title
+      margin-bottom: 16px
+    &__button
+      width: 48px
+      height: 48px
+    &__swiper
+      &-container
+        max-height: 839px
+    &-slide
+      width: 280px
+      height: 408px
+      padding-bottom: 130px
+      &__image
+        width: 270px
+        height: 277px
+      &__info
+        top: 257px
+        width: 270px
+      &__title
+        font-size: 20px
+        line-height: 24px
+      &__link
 @media ( max-width: 400px )
   .collection
     &__image

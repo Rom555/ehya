@@ -22,7 +22,6 @@
   &__button
     width: 54px
     height: 56px
-    margin-right: 22px
     display: inline-flex
     align-items: center
     justify-content: center
@@ -30,6 +29,8 @@
     border: 2px solid $dark
     border-radius: 2000px
     fill: $dark
+    &-prev
+      margin-right: 22px
     &--disabled
       border-color: #959EAD
       fill: #959EAD
@@ -40,7 +41,7 @@
     fill: inherit
   &__swiper
     &-container
-      width: 662px
+      max-width: 662px
   &-slide
     position: relative
     width: 332px
@@ -58,14 +59,21 @@
       padding: 20px
       background-color: #FAFDFF
     &__title
+      max-height: 104px
+      margin-top: 0
       margin-bottom: 12px
-      ont-family: HK Grotesk
+      font-family: HK Grotesk
       font-style: normal
       font-weight: 600
       font-size: 22px
       line-height: 32px
       letter-spacing: 0.2px
       color: $dark
+      overflow: hidden
     &__link
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
       text-decoration: none
       color: $primary

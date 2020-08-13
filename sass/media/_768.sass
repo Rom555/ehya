@@ -101,6 +101,12 @@
     &-wrapper
       max-width: 608px
       margin: auto
+  .history
+    &__swiper
+      &-container
+        max-height: 968px
+    &-slide
+      height: 475px
 @media ( min-width: 769px )
   .header
     &__button
@@ -113,6 +119,13 @@
       cursor: pointer
   .card-add
     cursor: pointer
+  .history
+    &__button
+      &:not(&--disabled)
+        cursor: pointer
+      &:active
+        background-color: $dark
+        fill: $light
 @media ( max-width: 660px )
   .card
     &-wrapper

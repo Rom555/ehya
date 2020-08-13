@@ -52,14 +52,21 @@ $(document).ready(function () {
   }
 
   var historySwiper = new Swiper(".history__swiper-container", {
+    direction: "vertical",
     slidesPerView: 2,
-    spaceBetween: 18,
+    spaceBetween: 24,
     slidesPerGroup: 2,
 
     navigation: {
       nextEl: ".history__button-next",
       prevEl: ".history__button-prev",
       disabledClass: "history__button--disabled",
+    },
+    breakpoints: {
+      720: {
+        direction: "horizontal",
+        spaceBetween: 18,
+      },
     },
   });
 });
