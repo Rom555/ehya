@@ -1,0 +1,82 @@
+.feedback
+  position: relative
+  padding: 100px 0
+  background: $primary
+  overflow: hidden
+  &__circle
+    position: absolute
+    width: 1186px
+    height: 1186px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0.2
+    &::before
+      content: ''
+      width: 786px
+      height: 786px
+      border-radius: 50%
+      background-color: $primary
+    &--first
+      top: -818px
+      left: -612px
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 99.73%)
+    &--second
+      bottom: -825px
+      right: -639px
+      background: linear-gradient(270deg, #FFFFFF 28.21%, rgba(255, 255, 255, 0.0001) 99.73%)
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__left
+    max-width: 490px
+  &__title
+    color: $light
+    margin-bottom: 14px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $light
+  &__form
+    position: relative
+  &__input
+    width: 447px
+    padding: 17px 155px 17px 48px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    background: $light
+    border: 1px solid #C3CAD9
+    border-radius: 8px
+  &__icon
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 20px
+    width: 16px
+    height: 16px
+  &__button
+    width: 143px
+    max-height: 48px
+    padding: 11px
+    position: absolute
+    right: 4px
+    bottom: 50%
+    transform: translateY(50%)
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #FFFFFF
+    background: $dark
+    border-radius: 4px
+    border: none
+    text-overflow: clip
+    white-space: nowrap
+    overflow: hidden
