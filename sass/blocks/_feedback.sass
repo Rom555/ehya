@@ -31,19 +31,21 @@
     align-items: center
     justify-content: space-between
   &__left
+    z-index: 1
     max-width: 490px
   &__title
     color: $light
     margin-bottom: 14px
   &__text
+    margin: 0
     font-style: normal
     font-weight: normal
     font-size: 18px
     line-height: 32px
     color: $light
   &__form
-    height: 58px
-    width: 447px
+    max-height: 58px
+    max-width: 447px
     display: flex
     flex-direction: column
     position: relative
@@ -60,8 +62,7 @@
     border-radius: 8px
   &__icon
     position: absolute
-    top: 50%
-    transform: translateY(-50%)
+    top: 21px
     left: 20px
     width: 16px
     height: 16px
@@ -70,9 +71,9 @@
     max-height: 48px
     padding: 11px
     position: absolute
+    top: 5px
     right: 4px
-    bottom: 50%
-    transform: translateY(50%)
+    bottom: 5px
     font-style: normal
     font-weight: bold
     font-size: 18px
