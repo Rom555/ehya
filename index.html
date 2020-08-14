@@ -507,12 +507,14 @@
             </p>
           </div>
           <!-- /.feedback__left -->
-          <form action="send.php" class="feedback__form">
+          <form action="send.php" method="POST" class="feedback__form form">
             <img src="img/feedback/email.svg" alt="@" class="feedback__icon" />
             <input
-              type="text"
+              type="email"
               class="feedback__input"
               placeholder="Your Emaill"
+              name="email"
+              required
             />
             <button class="feedback__button">Subscribe</button>
           </form>
@@ -527,6 +529,7 @@
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
