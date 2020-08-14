@@ -1,0 +1,73 @@
+.footer
+  padding-top: 128px
+  padding-bottom: 80px
+  &-top
+    display: grid
+    grid-template-columns: min-content 1fr 1fr 1fr 1fr
+    grid-column-gap: 30px
+  &__text
+    display: block
+    width: 263px
+    margin-top: 28px
+    margin-bottom: 32px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+  &__social
+    display: flex
+    &-link
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 42px
+      height: 40px
+      background: rgba(90, 113, 132, 0.1)
+      border-radius: 2000px
+      &:not(:last-child)
+        margin-right: 6px
+  &__title
+    margin-top: 0
+    margin-bottom: 31px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $dark
+  &__ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+  &__item
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    &:not(:last-child)
+      margin-bottom: 24px
+  &__link
+    text-decoration: none
+    color: $dark
+  &-bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 96px
+  &__image
+    position: relative
+    width: 24px
+    height: 28px
+    left: 16px
+    right: 16px
+    top: 16px
+    &-wrapper
+      position: relative
+      width: 56px
+      height: 56px
+      background: #1576D8
+      border-radius: 2000px
+  &__copyright
+    margin-top: 24px
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
