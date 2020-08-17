@@ -97,6 +97,7 @@
       height: 260px
       margin-bottom: 13px
     &__info
+      padding: 0
       justify-content: start
     &__price
       font-size: 14px
@@ -119,7 +120,7 @@
     padding-bottom: 64px
     &__image
       width: 70px
-      height: 81px
+      height: 61px
     &__text
       margin-bottom: 24px
       font-size: 18px
@@ -222,10 +223,20 @@
     &-bottom
       display: none
 @media ( max-width: 400px )
+  .hero
+    &__background
+      left: -173px
+      top: 10px
   .collection
     &__image
       &-wrapper
         height: 410px
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__text
+      max-width: 280px
   .card
     &-wrapper
       column-gap: 10px
@@ -234,6 +245,9 @@
     &-add
       padding: 40px 0 5px
       height: 170px
+  .feedback
+    &__form
+      max-width: 280px
   .footer
     &-top
       grid-template-columns: 113px 113px 1fr

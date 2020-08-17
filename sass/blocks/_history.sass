@@ -14,7 +14,7 @@
     margin-bottom: 24px
   &__text
     margin-top: 0
-    margin-bottom: 42px
+    margin-bottom: 52px
     font-style: normal
     font-weight: normal
     font-size: 20px
@@ -35,12 +35,18 @@
       border-color: #959EAD
       fill: #959EAD
       cursor: default
+    &:not(&--disabled)
+      &:active
+        background-color: $dark
+        fill: $light
   &__icon
     width: 14px
     height: 14px
     fill: inherit
   &__swiper
     &-container
+      padding-top: 10px
+      padding-left: 10px
       max-width: 662px
       margin: 0
   &-slide

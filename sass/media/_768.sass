@@ -66,11 +66,16 @@
   .hero
     padding-top: 94px
     &__background
-      top: 0
-      left: 210px
+      top: -10px
+      left: 230px
+      width: 600px
+      height: 899px
     &__container
       max-width: 728px
       width: 96%
+    &__item
+      &:not(:last-child)
+        margin-right: 20px
   .collection
     padding-bottom: 80px
     &-wrapper
@@ -105,6 +110,8 @@
   .history
     &__swiper
       &-container
+        padding: 0
+        max-width: 682px
         max-height: 968px
     &-slide
       height: 475px
@@ -113,29 +120,6 @@
       padding: 0 11px
     &__text
       width: 253px
-@media ( min-width: 769px )
-  .header
-    &__button
-      cursor: pointer
-  .hero
-    &__button
-      cursor: pointer
-  .tabs
-    &__item
-      cursor: pointer
-  .card-add
-    cursor: pointer
-  .history
-    &__button
-      &:not(&--disabled)
-        cursor: pointer
-        &:active
-          background-color: $dark
-          fill: $light
-  .feedback
-    &__button
-      cursor: pointer
-
 @media ( max-width: 660px )
   .card
     &-wrapper
